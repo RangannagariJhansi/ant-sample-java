@@ -69,7 +69,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure Web App Deploy: shinelabjava'
             inputs:
-              azureSubscription: '61ff743f-b913-4634-8b9a-200c86c1d4aa'
+              azureSubscription: '524d7d09-d16d-4c6f-921a-4d3e2135d987'
               appType: webAppLinux
               appName: $(webAppName)
               package: '$(Pipeline.Workspace)/drop/**/build/*.?(war|jar)'
