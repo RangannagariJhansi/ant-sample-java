@@ -50,7 +50,10 @@ stages:
 
     - publish: $(Build.ArtifactStagingDirectory)
       artifact: drop
-
+    - task: PublishPipelineArtifact@1
+      inputs:
+       targetPath: '$(Build.ArtifactStagingDirectory)' 
+       artifactName: 'myWebsiteName'
 
 
 
