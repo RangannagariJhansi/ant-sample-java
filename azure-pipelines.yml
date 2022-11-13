@@ -53,14 +53,6 @@ stages:
       artifact: drop
      
 
-    - task: AzureRmWebAppDeployment@4
-      inputs:
-        ConnectionType: 'AzureRM'
-        azureSubscription: 'shine-lab(61ff743f-b913-4634-8b9a-200c86c1d4aa)'
-        appType: 'webApp'
-        WebAppName: 'shinelabjava'
-        packageForLinux: '$(System.DefaultWorkingDirectory)/drop/build/*.jar'
-
 
 
 
