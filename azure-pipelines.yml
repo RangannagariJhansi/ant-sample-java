@@ -46,11 +46,12 @@ stages:
       inputs:
         SourceFolder: '$(System.DefaultWorkingDirectory)'
         Contents: '**/*/*.?(war|jar)'
+        #$(System.DefaultWorkingDirectory)/**/*.jar
         TargetFolder: $(Build.ArtifactStagingDirectory)
 
     - publish: $(Build.ArtifactStagingDirectory)
       artifact: drop
-     #$(System.DefaultWorkingDirectory)/**/*.jar
+     
 
 
 
