@@ -13,10 +13,10 @@ variables:
   #azureSubscription: 'e1acc1c4-a6cb-41d0-b98c-92a6f092bd71'
 
   # Web app name
-  webAppName: 'shinelabjava'
+  #webAppName: 'shinelabjava'
 
   # Environment name
-  environmentName: 'shinelabjava'
+  #environmentName: 'shinelabjava'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -57,7 +57,7 @@ stages:
     - task: AzureRmWebAppDeployment@4
       displayName: 'Azure App Service Deploy: shinelabjava'
       inputs:
-        azureSubscription: 'shine-lab(61ff743f-b913-4634-8b9a-200c86c1d4aa)'
+        azureSubscription: 'labboxprojects-javaapp_demo-61ff743f-b913-4634-8b9a-200c86c1d4aa'
         appType: webAppLinux
         WebAppName: shinelabjava
         packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.jar'
