@@ -174,7 +174,7 @@ jobs:
           chmod u+x "${SONAR_FOLDER}/bin/sonar-scanner"
           echo "PATH=\"${PATH}:${PWD}/${SONAR_FOLDER}/bin\"" >> $GITHUB_ENV
           source $GITHUB_ENV
-          /home/runner/work/Java_Ant/Java_Ant/sonar-scanner-5.0.1.3006-linux/bin/sonar-scanner -Dsonar.login=${{ secrets.SONAR_TOKEN }} -Dsonar.exclusions=**.java -Dsonar.export.results=sonar-results.xml -X
+          /home/runner/work/ant-sample-java/ant-sample-java/sonar-scanner-5.0.1.3006-linux/bin/sonar-scanner -Dsonar.login=${{ secrets.SONAR_TOKEN }} -Dsonar.exclusions=**.java -Dsonar.export.results=sonar-results.xml -X
           ls -lrt
       
       - name: listing
