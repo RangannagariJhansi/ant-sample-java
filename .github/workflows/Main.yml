@@ -2,7 +2,7 @@ name: Ant Workflow file
 on:
   push:
     branches:
-      - main
+      - master
     paths-ignore:
       - '**.md'
     tags-ignore:
