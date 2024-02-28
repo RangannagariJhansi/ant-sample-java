@@ -25,6 +25,8 @@
     <target name="run" depends="jar" description="run application">
         <java jar="${jar.dir}/${ant.project.name}.jar" fork="true"/>
     </target>
+    
+    <target name="build" depends="jar" description="build application"/>
 
     <target name="doc" description="generate documentation">
         <mkdir dir="${doc.dir}" />
