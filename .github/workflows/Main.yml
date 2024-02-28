@@ -100,6 +100,9 @@ jobs:
 
       - name: Build with Ant
         run: ant build
+
+      - name: Build with Ant
+        run: ant compile test
     
       - name: Download and Set Up SonarScanner
         run: |
