@@ -183,7 +183,7 @@ jobs:
       - name: zip for GitHub releases
         shell: pwsh
         run: |
-         Compress-Archive -Path  build\libs\*  -Destination ${{ github.event.repository.name }}.zip
+         Compress-Archive -Path  build/jar/*  -Destination ${{ github.event.repository.name }}.zip
          ls
       - name: Create Release and Upload Artifacts
         uses: ncipollo/release-action@v1
